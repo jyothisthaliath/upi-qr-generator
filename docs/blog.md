@@ -43,8 +43,6 @@ Workflow is same as the web application. No other requisites for running the app
 
 ## The Back Story
 
-An email from AppsGeyser reminded me of something I had created long back and totally forgotten.
-
 In 2016, shortly after the **demonetization**, many retailers adopted SBI Buddy and Paytm to attract cashless payments. But both of these services required that the payer have a prepaid wallet account with their respective providers.
 
 But with the advent of **UPI**, all of that was going to be changed. UPI was the game changer in payments, which allowed people to make payments out of their own bank accounts without keeping any third-party wallets.
