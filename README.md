@@ -156,6 +156,47 @@ upi-qr-generator/
 
 ---
 
+## 🔧 Technical Notes
+
+### QR Code API Migration (2024)
+
+The original app used the **Google Chart Infographics API** to generate QR codes:
+
+```
+https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl={upi-deeplink}
+```
+
+Google officially **deprecated and shut down** this API. Any code still using it returns a broken image.
+
+**Replaced with [QR Server API](https://goqr.me/api/)** — a free, reliable drop-in alternative:
+
+```
+https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={upi-deeplink}
+```
+
+**Changes made in `web/generate.htm`:**
+
+```diff
+- var apiURL = "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=" + chl;
++ var apiURL = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=" + encodeURIComponent(chl);
+```
+
+**Changes made in `web/QR code test.htm`:**
+
+```diff
+- form.action = "https://chart.googleapis.com/chart";
+- element1.name = "cht";  element1.value = "qr";
+- element2.name = "chs";  element2.value = "300x300";
+- element3.name = "chl";  element3.value = chl;
++ form.action = "https://api.qrserver.com/v1/create-qr-code/";
++ element1.name = "size"; element1.value = "300x300";
++ element2.name = "data"; element2.value = chl;
+```
+
+> `encodeURIComponent()` was also added in `generate.htm` to ensure the UPI deeplink string is properly URL-encoded before being passed to the API.
+
+---
+
 ## 🙏 Credits
 
 - **Rojish Roy** — Helped with the project and hosted the app on `upiguide.com` *(domain no longer active)*

@@ -131,6 +131,12 @@ function myFunction()
 	var notes = document.getElementById("notes").value;
 	var chl = "upi://pay?pn="+name+"&pa="+vpa+"&am="+amount+"&tn="+notes;
 	
+	// NOTE: The original code used the Google Chart Infographics API:
+	//   https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl={data}
+	// Google officially deprecated and shut down this API.
+	// Replaced with QR Server API (drop-in alternative, same result):
+	//   https://api.qrserver.com/v1/create-qr-code/?size=300x300&data={data}
+	// encodeURIComponent() added to safely encode the UPI deeplink string.
 	var apiURL="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+encodeURIComponent(chl);
     
     {

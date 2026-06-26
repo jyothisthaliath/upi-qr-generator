@@ -95,6 +95,13 @@ function myFunction()
 
     form.method = "GET";
 	form.acceptCharset = "UTF-8";
+	// NOTE: The original code submitted a form GET to the Google Chart Infographics API:
+	//   action: https://chart.googleapis.com/chart
+	//   params: cht=qr, chs=300x300, chl={data}
+	// Google officially deprecated and shut down this API.
+	// Replaced with QR Server API:
+	//   action: https://api.qrserver.com/v1/create-qr-code/
+	//   params: size=300x300, data={data}  (cht param not required)
     form.action = "https://api.qrserver.com/v1/create-qr-code/";
 	form.setAttribute("target", "_blank");
 	form.setAttribute("id","newform");
