@@ -2,7 +2,9 @@
 
 > **📦 Archive Project** — This repository is preserved for historical reference. The web app source is fully functional and can be run locally in any browser.
 
-![UPI](images/upi_logo.png)
+<p align="center">
+  <img src="images/upi_logo.png" alt="Logo" width="300">
+</p>
 
 A tool built in **2016** to help small-scale retailers generate UPI payment QR codes — right after India's demonetization — at a time when major UPI apps hadn't yet built this feature natively.
 
