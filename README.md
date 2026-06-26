@@ -111,9 +111,9 @@ web/generate.htm
 
 ### QR Scan Flow
 
-| Customer Scans QR | Bank App — Pre-filled Details | Scan Demo |
-|:---:|:---:|:---:|
-| ![Mobile Scanning QR](images/qr_customer_scanning.jpg) | ![Bank App After Scan](images/qr_bank_app_prefilled.jpg) | ![Scanning Demo](images/qr_scanning_demo.jpg) |
+| Customer Scans QR | Bank App — Pre-filled Details |
+|:---:|:---:|
+| ![Mobile Scanning QR](images/qr_customer_scanning.jpg) | ![Bank App After Scan](images/qr_bank_app_prefilled.jpg) |
 
 ### Android App *(lost — screenshots only)*
 
