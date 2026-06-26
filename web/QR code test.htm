@@ -1,6 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
  
  <head>
+<link rel="icon" type="image/x-icon" href="../images/upi_logo.ico">
 <style> 
 
 p {
@@ -94,21 +95,17 @@ function myFunction()
 
     form.method = "GET";
 	form.acceptCharset = "UTF-8";
-    form.action = "https://chart.googleapis.com/chart";   
+    form.action = "https://api.qrserver.com/v1/create-qr-code/";
 	form.setAttribute("target", "_blank");
 	form.setAttribute("id","newform");
 	
-	element1.value=cht;
-    element1.name="cht";
+	element1.value="300x300";
+    element1.name="size";
     form.appendChild(element1);  
 
-    element2.value=chs;
-    element2.name="chs";
-    form.appendChild(element2);
-	
-    element3.value=chl;
-    element3.name="chl";
-    form.appendChild(element3);  
+    element2.value=chl;
+    element2.name="data";
+    form.appendChild(element2);  
 	
     document.body.appendChild(form);
     form.submit();	

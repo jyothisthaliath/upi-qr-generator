@@ -1,6 +1,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
  <head>
+<link rel="icon" type="image/x-icon" href="../images/upi_logo.ico">
 <style>
 
 p {
@@ -130,7 +131,7 @@ function myFunction()
 	var notes = document.getElementById("notes").value;
 	var chl = "upi://pay?pn="+name+"&pa="+vpa+"&am="+amount+"&tn="+notes;
 	
-	var apiURL="https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl="+chl;
+	var apiURL="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+encodeURIComponent(chl);
     
     {
 		myWindow=window.open('','','width=350,height=450');

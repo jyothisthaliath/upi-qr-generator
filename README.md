@@ -2,7 +2,7 @@
 
 > **📦 Archive Project** — This repository is preserved for historical reference. The web app source is fully functional and can be run locally in any browser.
 
-![UPI](assets/UPI%20Logo.png)
+![UPI](images/upi_logo.png)
 
 A tool built in **2016** to help small-scale retailers generate UPI payment QR codes — right after India's demonetization — at a time when major UPI apps hadn't yet built this feature natively.
 
@@ -95,25 +95,35 @@ web/generate.htm
 
 ## 📸 Screenshots
 
-### Web App
+### Web App — Make Bill Mode
 
-| Home | Output |
+| Make Bill UI | Web View |
 |:---:|:---:|
-| ![Web App 1](assets/screenshots/web%20app%201.PNG) | ![Web App 2](assets/screenshots/web%20app%202.PNG) |
+| ![Make Bill UI](images/web_make_bill_ui.png) | ![Web App](images/web_bill_mode_view.png) |
+
+### Web App — Create Poster Mode
+
+| Create Poster UI | Generated Poster (Print-ready) |
+|:---:|:---:|
+| ![Create Poster UI](images/web_create_poster_ui.png) | ![UPI Poster](images/web_poster_output.png) |
+
+### QR Scan Flow
+
+| Customer Scans QR | Bank App — Pre-filled Details | Scan Demo |
+|:---:|:---:|:---:|
+| ![Mobile Scanning QR](images/qr_customer_scanning.jpg) | ![Bank App After Scan](images/qr_bank_app_prefilled.jpg) | ![Scanning Demo](images/qr_scanning_demo.jpg) |
 
 ### Android App *(lost — screenshots only)*
 
 | Screen 1 | Screen 2 |
 |:---:|:---:|
-| ![Android 1](assets/screenshots/android1.jpg) | ![Android 2](assets/screenshots/android2.jpg) |
+| ![Android 1](images/android_app_screen1.jpg) | ![Android 2](images/android_app_screen2.jpg) |
 
 ### Windows App *(lost — screenshots only)*
 
-![Windows App](assets/screenshots/win%20app.PNG)
-
-### QR Scan Demo
-
-![Scanning Demo](assets/screenshots/scanning.jpg)
+| App UI | Web View |
+|:---:|:---:|
+| ![Windows App](images/windows_app_ui.png) | ![Web App 2](images/web_app_view2.png) |
 
 ---
 
@@ -126,11 +136,19 @@ upi-qr-generator/
 │   ├── generate.htm          # Main web app (final version — Bill + Poster modes)
 │   └── QR code test.htm      # Early prototype (simpler, for historical reference)
 │
-├── assets/
-│   ├── UPI Logo.png
-│   ├── UPI Logo.jpg
-│   ├── UPI Logo.ico
-│   └── screenshots/          # Historical screenshots (web, Android, Windows)
+├── images/                       # All images (logos + screenshots)
+│   ├── upi_logo.png/.jpg/.ico
+│   ├── web_make_bill_ui.png
+│   ├── web_create_poster_ui.png
+│   ├── web_bill_mode_view.png
+│   ├── web_poster_output.png
+│   ├── web_app_view2.png
+│   ├── qr_customer_scanning.jpg
+│   ├── qr_bank_app_prefilled.jpg
+│   ├── qr_scanning_demo.jpg
+│   ├── android_app_screen1/2.jpg
+│   ├── windows_app_ui.png
+│   └── historical_2016_screenshot.png (web, Android, Windows)
 │
 └── docs/
     └── blog.md               # Full story behind the project
