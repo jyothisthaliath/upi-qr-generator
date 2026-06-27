@@ -8,8 +8,7 @@
 
 A tool built in **2016** to help small-scale retailers generate UPI payment QR codes — right after India's demonetization — at a time when major UPI apps hadn't yet built this feature natively.
 
-
-View the web demo here: [https://jyothisthaliath.github.io/upi-qr-generator]
+>View the web demo here: [https://jyothisthaliath.github.io/upi-qr-generator]
 ---
 
 ## 📖 The Story
