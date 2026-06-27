@@ -70,7 +70,7 @@ Retailer receives SMS confirmation of credit
 
 | Platform | Status | Notes |
 |---|---|---|
-| 🌐 **Web App** | ✅ Source available | See [`web/generate.htm`](web/generate.htm) |
+| 🌐 **Web App** | ✅ Source available | See [`web/generate.htm`](docs/index.htm) |
 | 🤖 **Android App** | ❌ Lost | Was a web-to-APK wrapper via a third-party service; screenshots preserved |
 | 🪟 **Windows App** | ❌ Lost | Was a .NET wrapper around the web app; screenshots preserved |
 
